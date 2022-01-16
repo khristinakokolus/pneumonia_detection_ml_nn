@@ -56,6 +56,17 @@ Distibution of data in each dataset (train, test and validation):
 
 ## Approaches
 
+Pneumonia detection is a classification problem for which various algorithms of machine learning and deep learning mostly are used.
+To make it more interesting, we decided to use and analyze both of the approaches.
+
+We have implemented two models of machine learning:
+* SVM (support vector machine model)
+* XGBoost (Extreme Gradient Boosting model)
+
+Regarding deep learning, we implemented three models:
+* CNN
+* Resnet
+* MobileNet
 
 
 ## Pipeline
