@@ -26,6 +26,7 @@ This disease is a great threat to people, especially children and adults over th
 
 To understand the general situation here is an infographic provided. We can see that although the number of pneumonia cases slightly decreases, it still causes a lot of deaths.
 
+![stat](https://user-images.githubusercontent.com/60686300/149668779-846ae977-e5e8-4300-be42-c229db650f05.jpg)
 
 And of course, the coronavirus disease had a major impact on the world. About 15% of COVID-19 cases are severe and cause pneumonia. And about 5% of people have critical infections and need a ventilator.
 
@@ -43,15 +44,80 @@ It is well splitted - it consists of 3 directories: train, test and validation, 
 
 Example of X-Rays with normal lungs:
 
+![normal](https://user-images.githubusercontent.com/60686300/149668833-99e0f8f9-6077-438a-97b7-4c59bea543d0.jpg)
+
 Example of X-Rays with pneumonia:
 
+![pneumonia](https://user-images.githubusercontent.com/60686300/149668838-90931d93-bacd-4f69-9084-04defae85071.jpg)
 
 Distibution of data in each dataset (train, test and validation):
 
+![stat2](https://user-images.githubusercontent.com/60686300/149668850-74cc7d72-e894-4ac9-babd-b1583e4b2a4a.jpg)
 
 ## Approaches
 
 
+
+## Pipeline
+
+
+1. Data processing
+      - Getting train, validation and test datasets.
+ 
+2. Images processing
+      - Improvement  of images, getting away unwanted distortions
+
+3. Investigation of Machine Learning models: SVM, Random Forest, Xgboost, K-nearest neighbor.
+      - Validation of  model hyperparameters
+      - Training and testing data
+      - Results evaluation
+ 
+4. Investigation of Deep learning models: CNN, ResNet50, MobileNet:
+      - Validation of  model hyperparameters
+      - Training and testing data
+      - Results evaluation
+
+5. Choosing the best model
+
+## Metrics
+
+In our project we used confusion matrix to evaluate results of ML and NN models.
+
+![matrix](https://user-images.githubusercontent.com/60686300/149668240-aa408d55-029d-4bb8-b8bd-007f545dc7b0.png)
+
+
+**SVM**
+
+![svm](https://user-images.githubusercontent.com/60686300/149668510-1ceefb7f-fb42-41c7-9567-3feada9ba2d6.png)
+
+**XGBoost**
+
+![boost](https://user-images.githubusercontent.com/60686300/149668694-2f0f49fd-1bbe-4375-8a54-94e3f178dc2e.png)
+
+**CNN**
+
+![cnn](https://user-images.githubusercontent.com/60686300/149668703-2b6fd665-a172-4f83-b75f-0072c54bc493.png)
+
+**ResNet**
+
+![resnet](https://user-images.githubusercontent.com/60686300/149668715-23b0b203-515e-44d6-b1f8-be8b5754593b.png)
+
+**MobileNet**
+
+![mobilenet](https://user-images.githubusercontent.com/60686300/149668721-2df185d9-62ff-4e91-944b-652ac530502c.png)
+
+
+From thise pictires cam be seen that the best model is MobileNet and we decided to use it.
+
+## Results
+
+We analysed different ML and NN approaches, chose ones that suited our problem. Mostly we worked on finding better ML or NN among chosen ones to get bigger accuracy number.
+
+![pneumonia](https://user-images.githubusercontent.com/60686300/149668737-a23215b4-7391-4b9b-a149-ef50e6a3171d.png)
+
+![normal](https://user-images.githubusercontent.com/60686300/149668743-92d673da-a589-47ff-a4e1-ada46d59ef68.png)
+
+From there can be seen with what probability were found images with pneumonia and normal lungs on trained MobileNet NN.
 
 ## Contribution
 
